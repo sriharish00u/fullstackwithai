@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 mongoose.connect(
-  "mongodb://admin:admin123@ac-bpye3dx-shard-00-00.dgkjwsa.mongodb.net:27017,ac-bpye3dx-shard-00-01.dgkjwsa.mongodb.net:27017,ac-bpye3dx-shard-00-02.dgkjwsa.mongodb.net:27017/studentsDB?ssl=true&replicaSet=atlas-zoy5ys-shard-0&authSource=admin&retryWrites=true&w=majority"
+  "mongodb://<username:password>@ac-bpye3dx-shard-00-00.dgkjwsa.mongodb.net:27017,ac-bpye3dx-shard-00-01.dgkjwsa.mongodb.net:27017,ac-bpye3dx-shard-00-02.dgkjwsa.mongodb.net:27017/studentsDB?ssl=true&replicaSet=atlas-zoy5ys-shard-0&authSource=admin&retryWrites=true&w=majority"
 )
 .then(() => console.log("MongoDB connected"))
 .catch(err => console.log(err));
